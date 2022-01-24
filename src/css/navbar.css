@@ -1,0 +1,65 @@
+.navbar-root
+{
+    --nav-height: 8rem;
+}
+.nav-root, .nav-root > *
+{
+    z-index: 9999;
+    @apply p-0 m-0;
+}
+.nav-root ul
+{
+    @apply list-none;
+}
+.navbar
+{
+    @apply overflow-scroll fixed bottom-0 w-full p-0;
+}
+.navbar-main
+{
+    @apply bg-gray-700 flex justify-end items-stretch px-4 gap-5;
+    height: var(--nav-height);
+}
+.nav-menu .nav-link
+{
+    @apply hover:bg-glass-dark;
+}
+.navbar-nav
+{
+    @apply p-0 flex justify-end;
+}
+.nav-link
+{
+    @apply text-red-400 hover:bg-gray-600 hover:text-red-400;
+}
+.nav-item
+{
+    @apply flex items-center justify-center;
+}
+.nav-item:not(.nav-icon)
+{
+    @apply px-5;
+}
+.nav-item.left
+{
+    @apply left-0 ml-auto;
+}
+.nav-list
+{
+    @apply flex justify-end;
+}
+.nav-list *
+{
+    @apply flex;
+}
+.nav-icon
+{
+    --button-size: calc(var(--nav-height) * 1);
+    @apply flex items-center justify-center;
+    width: var(--button-size);
+    height: var(--button-size);
+}
+.nav-margin
+{
+    margin-top: var(--nav-height);
+}
