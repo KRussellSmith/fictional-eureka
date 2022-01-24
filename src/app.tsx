@@ -126,6 +126,8 @@ export default () =>
                         <FormRow label='PAGO'>
                             <select id='pago-opz' name='pago' required>
                                 <option hidden disabled selected value=''>[ $$ ]</option>
+                                <option value='30'>30</option>
+                                <option value='35'>35</option>
                                 <option value='55'>55</option>
                                 <option value='60'>60</option>
                             </select>
@@ -178,6 +180,8 @@ export default () =>
                         <FormRow label='PAGO'>
                             <select id='edit-pago-opz' name='pago' required>
                                 <option hidden disabled selected value=''>[ $$ ]</option>
+                                <option value='30'>30</option>
+                                <option value='35'>35</option>
                                 <option value='55'>55</option>
                                 <option value='60'>60</option>
                             </select>
