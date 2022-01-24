@@ -135,7 +135,7 @@ export default () =>
                         </FormRow>
                     </fieldset>
                     </div>
-                    <fieldset><input type='submit' value='VALE'></input></fieldset>
+                    <fieldset><input type='submit' value='AGREGAR'></input></fieldset>
                 </form>
             </Modal>
             <Modal id='edit-student' class='px-12'>
@@ -187,7 +187,7 @@ export default () =>
                         </FormRow>
                     </fieldset>
                     </div>
-                    <fieldset><input type='submit' value='VALE'></input></fieldset>
+                    <fieldset><input type='submit' value='ACTUALIZAR'></input></fieldset>
                 </form>
             </Modal>
             <Modal id='remove-student' class='px-12'>
@@ -199,7 +199,7 @@ export default () =>
                         Controller.data = new FormData(form);
                         Controller.observable.notify(Event.REMOVE);
                         form.reset();
-                        document.querySelector('#add-student')?.classList.toggle('hidden');
+                        document.querySelector('#remove-student')?.classList.toggle('hidden');
                     }
                 }>
                     <div class='flex items-center justify-center'>
@@ -212,7 +212,7 @@ export default () =>
                         </FormRow>
                     </fieldset>
                     </div>
-                    <fieldset><input type='submit' value='VALE'></input></fieldset>
+                    <fieldset><input type='submit' value='ELIMINAR'></input></fieldset>
                 </form>
             </Modal>
             <Navbar links={ [
