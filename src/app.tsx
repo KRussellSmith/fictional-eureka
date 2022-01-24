@@ -124,13 +124,7 @@ export default () =>
                             </select>
                         </FormRow>
                         <FormRow label='PAGO'>
-                            <select id='pago-opz' name='pago' required>
-                                <option hidden disabled selected value=''>[ $$ ]</option>
-                                <option value='30'>30</option>
-                                <option value='35'>35</option>
-                                <option value='55'>55</option>
-                                <option value='60'>60</option>
-                            </select>
+                            <input id="pago-opz" type="text" pattern="\d*" name="pago" required></input>
                         </FormRow>
                         <FormRow label='INICIO'>
                             <input id='inicio-opz' name='inicio' type='date' required></input>
@@ -178,13 +172,7 @@ export default () =>
                             </select>
                         </FormRow>
                         <FormRow label='PAGO'>
-                            <select id='edit-pago-opz' name='pago' required>
-                                <option hidden disabled selected value=''>[ $$ ]</option>
-                                <option value='30'>30</option>
-                                <option value='35'>35</option>
-                                <option value='55'>55</option>
-                                <option value='60'>60</option>
-                            </select>
+                            <input id="edit-pago-opz" type="text" pattern="\d*" name="pago" required></input>
                         </FormRow>
                         <FormRow label='INICIO'>
                             <input id='edit-inicio-opz' name='inicio' type='date' required></input>
