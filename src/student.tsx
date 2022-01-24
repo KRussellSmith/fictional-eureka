@@ -25,7 +25,7 @@ export default ({ nombre, naz, mat, grupo, pago, pagos, inicio }: { nombre: stri
     {
         const hoy = new Date();
         let meses = (hoy.getFullYear() - año_inicio) * 12;
-        meses += hoy.getMonth() - mes_inicio;
+        meses += 11 - mes_inicio;
         return meses;
     })();
     const fields = (() =>
